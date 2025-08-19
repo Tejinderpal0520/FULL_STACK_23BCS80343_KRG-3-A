@@ -1,82 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tejinderpal Singh | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <title>Tejinderpal Singh | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800 font-sans">
 
-    <h1 id = "name">Tejinderpal Singh</h1>
-    <hr>
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-indigo-600 to-blue-500 text-white py-6 shadow-md">
+    <h1 class="text-4xl font-bold text-center">Tejinderpal Singh</h1>
+    <p class="text-center text-sm">Portfolio</p>
+  </header>
 
-    <h2 class = "MyIntro">About Me</h2>
-    <p class = "MyIntro">
+  <main class="max-w-4xl mx-auto p-6">
+
+    <!-- About -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 inline-block pb-1">About Me</h2>
+      <p class="mt-3">
         I am a third-year B.E. Computer Science Engineering student at Chandigarh University, Gharuan, Mohali, Punjab. 
         I am originally from Bassi Pathana, Fatehgarh Sahib, Punjab.
-    </p>
-    <p class = "MyIntro">
-        <a href="https://www.linkedin.com/in/your-link" target="_blank">LinkedIn</a>
-        <a href="https://leetcode.com/u/Tejinderpal-Singh/"></a>
-    </p>
-    <hr>
+      </p>
+      <div class="mt-3 space-x-4">
+        <a href="https://www.linkedin.com/in/your-link" target="_blank" 
+           class="text-indigo-600 hover:underline font-medium">LinkedIn</a>
+        <a href="https://leetcode.com/u/Tejinderpal-Singh/" target="_blank" 
+           class="text-indigo-600 hover:underline font-medium">LeetCode</a>
+      </div>
+    </section>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Java</li>
-        <li>Python</li>
-        <li>C / C++</li>
-        <li>Oracle SQL</li>
-        <li>MySQL</li>
-    </ul>
-    <hr>
+    <!-- Skills -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 inline-block pb-1">Skills</h2>
+      <ul class="mt-3 grid grid-cols-2 gap-2">
+        <li class="bg-white shadow rounded-lg px-3 py-2">Java</li>
+        <li class="bg-white shadow rounded-lg px-3 py-2">Python</li>
+        <li class="bg-white shadow rounded-lg px-3 py-2">C / C++</li>
+        <li class="bg-white shadow rounded-lg px-3 py-2">Oracle SQL</li>
+        <li class="bg-white shadow rounded-lg px-3 py-2">MySQL</li>
+      </ul>
+    </section>
 
-    <h2>Projects</h2>
-    <p>
+    <!-- Projects -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 inline-block pb-1">Projects</h2>
+      <p class="mt-3">
         <strong>QR Generator & Reader:</strong> Developed an application that converts any textual data into a QR code. 
-        The generated QR code can be saved in various formats including PNG, JPEG, SVG, and HEIF.
-    </p>
-    <hr>
+        The generated QR code can be saved in PNG, JPEG, SVG, and HEIF formats.
+      </p>
+    </section>
 
-    <h2>Research Paper Published</h2>
-    <p>
-        <strong>EEG Signal Detection Using Machine Learning Algorithms:</strong> In this research, we analyzed EEG signals 
-        from approximately 12,000 individuals using a Python-based algorithm. The data was processed and classified into binary values:
-        0 indicates "Not an Epileptic Person" and 1 indicates "Person has Epilepsy."
-    </p>
-    <hr>
-    <h2>Online Plateform progress:</h2> <p> currently solve 260 leetcode problems. My username in leetcode is <a href="https://leetcode.com/u/Tejinderpal-Singh/">Tejinderpal-Singh</a></p>
-    <h2>Education</h2>
-    <ul>
-        <li>
-            <strong>B.E. in Computer Science Engineering</strong><br>
-            Chandigarh University, Gharuan, Mohali, Punjab<br>
-            Current CGPA: 7.5 (As of 3rd Year)
+    <!-- Research -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 inline-block pb-1">Research Paper Published</h2>
+      <p class="mt-3">
+        <strong>EEG Signal Detection Using Machine Learning Algorithms:</strong> 
+        Analyzed EEG signals from ~12,000 individuals using a Python-based algorithm. 
+        Classified into binary values: <code>0 = Not Epileptic</code>, <code>1 = Epileptic</code>.
+      </p>
+    </section>
+
+    <!-- Online Progress -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 inline-block pb-1">Online Platform Progress</h2>
+      <p class="mt-3">
+        Currently solved <strong>260+</strong> LeetCode problems.  
+        Profile: <a href="https://leetcode.com/u/Tejinderpal-Singh/" 
+                    target="_blank" 
+                    class="text-indigo-600 hover:underline">Tejinderpal-Singh</a>
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 inline-block pb-1">Education</h2>
+      <ul class="mt-3 space-y-4">
+        <li class="bg-white shadow p-4 rounded-lg">
+          <strong>B.E. in Computer Science Engineering</strong><br>
+          Chandigarh University, Gharuan, Mohali, Punjab<br>
+          Current CGPA: 7.5 (As of 3rd Year)
         </li>
-        <br>
-        <li>
-            <strong>Higher Secondary Education (Class 12th) – Non-Medical</strong><br>
-            Scored: 81.7%<br>
-            Year of Completion: 2022
+        <li class="bg-white shadow p-4 rounded-lg">
+          <strong>Higher Secondary Education (Class 12th) – Non-Medical</strong><br>
+          Scored: 81.7%<br>
+          Year of Completion: 2022
         </li>
-    </ul>
-    <hr>
+      </ul>
+    </section>
 
-    <h2>Contact Me</h2>
-    <form>
-        <p><label for="name">Name:</label></p>
-        <input type="text" id="name" name="name" required>
+    <!-- Contact -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold border-b-2 border-indigo-500 inline-block pb-1">Contact Me</h2>
+      <form class="mt-4 bg-white p-6 shadow rounded-lg space-y-4">
+        <div>
+          <label for="name" class="block font-medium">Name:</label>
+          <input type="text" id="name" name="name" required
+                 class="w-full border rounded p-2 mt-1">
+        </div>
 
-        <p><label for="email">Email:</label></p>
-        <input type="email" id="email" name="email" required>
+        <div>
+          <label for="email" class="block font-medium">Email:</label>
+          <input type="email" id="email" name="email" required
+                 class="w-full border rounded p-2 mt-1">
+        </div>
 
-        <p><label for="message">Message:</label></p>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <div>
+          <label for="message" class="block font-medium">Message:</label>
+          <textarea id="message" name="message" rows="5" required
+                    class="w-full border rounded p-2 mt-1"></textarea>
+        </div>
 
-        <br><br>
-        <button type="submit">Submit</button>
-    </form>
+        <button type="submit" 
+                class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+          Submit
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center py-4 mt-10">
+    <p class="text-sm">© 2025 Tejinderpal Singh. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
+
