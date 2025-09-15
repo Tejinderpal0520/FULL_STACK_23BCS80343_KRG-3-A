@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Product Filter</title>
+  
+  <script src="index.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    select {
+      padding: 5px 10px;
+      margin: 0 10px 20px 0;
+      border-radius: 5px;
+    }
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+      width: 200px;
+      background: #f9f9f9;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+      transition: box-shadow 0.15s;
+    }
+    .product:hover{
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+    }
+    .product h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .product p {
+      margin: 5px 0 0;
+      color: #333;
+    }
+    .drop-down{
+        /* background-color: red; */
+        width: 200px;
+        display: inline;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-right: 8px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body>
+    <h2>Product Filter</h2>
+    <div class = "drop-down">
+        <label for="filter">Category:</label>
+        <select id="filter">
+            <option value="all">All Products</option>
+            <option value="electronics">Electronics</option>
+            <option value="clothing">Clothing</option>
+        </select>
+        
+        <label for="sort">Sort by Price:</label>
+        <select id="sort">
+            <option value="default">Default</option>
+            <option value="low-high">Low → High</option>
+            <option value="high-low">High → Low</option>
+        </select>
+    </div>
+        
+    <div id="products-container"></div>
+
+</body>
+</html>
